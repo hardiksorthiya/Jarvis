@@ -2,6 +2,7 @@
 @media (min-width: 992px) {
     #wrapper {
       padding-left: 250px;
+      margin-right: 85px;
     }
     
     #wrapper.toggled {
@@ -36,7 +37,7 @@
   
     #content-wrapper {
       position: relative;
-      top: 0;
+      margin-left: 35px;
     }
   
     #wrapper.toggled #navbar-wrapper,
@@ -85,7 +86,7 @@
     }
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 769px) {
     #wrapper {
       padding-left: 0;
     }
@@ -93,10 +94,19 @@
     #sidebar-wrapper {
       width: 0;
     }
-  
+    a#sidebar-toggle {
+      margin-left: 0;
+  }
+    #wrapper.toggled ul.sidebar-nav i {
+      margin-right: 8px;
+    }
     #wrapper.toggled #sidebar-wrapper {
       width: 250px;
     }
+    ul.sidebar-nav i {
+      
+      margin-right: 30px;
+  }
     #wrapper.toggled #navbar-wrapper {
       position: absolute;
       margin-right: -250px;
@@ -123,6 +133,13 @@
     #wrapper.toggled #navbar-wrapper,
     #wrapper.toggled #content-wrapper {
       position: relative;
-      margin-right: 250px;
+      margin-right: 0;
     }
   }
+
+  @media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 708px;
+        margin: 1.75rem auto;
+    }
+}
