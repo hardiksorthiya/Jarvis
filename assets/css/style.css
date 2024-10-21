@@ -43,8 +43,8 @@ a:hover {
 .small-text {
     font-size: 12px;
 }
-.my-30{
-    margin: 30px 0;
+.my-30 {
+    margin: 30px auto;
 }
 /* main */
 .logo-text {
@@ -279,6 +279,7 @@ ul.sidebar-nav i {
     border-bottom: 1px solid #22222210;
     border-top: 1px solid #22222210;
     margin-top: 44px;
+    padding: 0.5rem 12px;
 }
 
 #content-wrapper {
@@ -427,4 +428,31 @@ form.popup-hp .col-lg-6 {
     justify-content: flex-end;
     padding: 24px;
     gap: 24px;
+}
+li.active.dropdown:hover > .dropdown-menu {
+    display: block;
+    position: relative;
+    background: transparent;
+    border: none;
+}
+.dropdown-menu.dropdown-menu-lg-right a.dropdown-item {
+    padding: 10px;
+}
+.page-link {
+    position: relative;
+    display: flex;
+    color: #222222;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.right-arrow {
+    transform: rotate(90deg);
+}
+.left-arrow {
+    transform: rotate(270deg);
+}
+.dropdown-menu {
+    min-width: inherit;
 }

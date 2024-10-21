@@ -72,7 +72,7 @@
                 <h5>Raw Material - Vehicle Wise</h5>
               </div>
             </div>
-            <div class="col-xl-8 col-lg-8 col-md-6 p-0">
+            <div class="col-xl-8 col-lg-8 col-md-6">
               <div class="right-side-page-heading d-flex justify-content-end">
                 <button class="btn btn-border">Upload Test</button>
                 <button class="btn btn-border">Mass Vehicle upload</button>
@@ -84,7 +84,24 @@
         <!-- search -->
         <div class="container my-30">
           <div class="row">
-            <div class="col-12 p-0">
+            <div class="col-lg-6">
+              <div class="dropdown">
+                <button class="btn btn-border-dropdown hp-dropdown d-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="d-flex align-items-center">
+                    <div class="btn-dropd0wn-text">
+                      <p class="mb-0">Short By</p>
+                    </div>
+                  </div>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Latest Entry Date</a></li>
+                  <li><a class="dropdown-item" href="#">ASC Bill No.</a></li>
+                  <li><a class="dropdown-item" href="#">DESC Bill No.</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 ">
               <div class="d-flex justify-content-end" style="gap: 32px;">
                 <form action="">
                   <div class="field-hp d-flex searchform">
@@ -101,8 +118,10 @@
                     </div>
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                    <li><a class="dropdown-item" href="#">10</a></li>
+                    <li><a class="dropdown-item" href="#">20</a></li>
+                    <li><a class="dropdown-item" href="#">50</a></li>
+                    <li><a class="dropdown-item" href="#">100</a></li>
                   </ul>
                 </div>
               </div>
@@ -114,7 +133,7 @@
       <section class="detail-table">
         <div class="container">
           <div class="raw table-responsive">
-            <table class="table table-hover ">
+            <table class="table table-hover " id="example">
               <thead>
                 <tr class="table-heading-hp">
                   <th scope="col">S.N.</th>
@@ -172,10 +191,22 @@
           </div>
         </div>
       </section>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link" href="#"><i class="hp-dropdown right-arrow"></i>Prev</a></li>
+          <li class="page-item"><a class="page-link" href="#">1<i class="hp-dropdown"></i></a></li>
+          <li class="page-item"><a class="page-link" href="#">of 77</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next<i class="hp-dropdown left-arrow"></i></a></li>
+        </ul>
+      </nav>
     </main>
     <!-- model -->
      <!-- Button trigger modal -->
-
+<script>
+  $(document).ready(function() {
+  $("#example").DataTable();
+});
+</script>
 
 <!-- Modal -->
 <div class="modal fade " id="addvehicle" tabindex="-1" aria-labelledby="addvehicleLabel" aria-hidden="true" data-backdrop="false">
